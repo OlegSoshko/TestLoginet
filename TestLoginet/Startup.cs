@@ -49,7 +49,10 @@ namespace TestLoginet
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            else
+            {
+                app.UseHsts();
+            }
             app.UseHttpsRedirection();
 
             app.UseRouting();
